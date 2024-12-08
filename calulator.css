@@ -1,0 +1,36 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+.container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    height: 100%
+}
+.box{
+    background-color: gray ;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 50px;
+    border-radius: 20px;
+
+}
+button{
+    background-color: skyblue;
+    padding: 10px 15px;
+    border-radius: 20px;
+
+}
+button:hover{
+    background-color: white;
+}
+input{
+    color: #333;
+padding: 10px 50px;
+border-radius: 20px;
+}
