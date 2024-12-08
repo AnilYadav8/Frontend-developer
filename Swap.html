@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Swap.css">
+
+</head>
+<body>
+    <div class="container"> 
+        <div class="box">
+            <h2>Swap</h2>
+            Input A : <input type="number" id="num1"><br><br>
+            Input B : <input type="number" id="num2"><br><br>
+            <button onclick="swap()"> Swap</button>
+            <button onclick="sum()">sum</button>
+        </div>
+    </div>
+    <script>
+        function swap(){
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+        
+        // [a,b]=[b,a];
+        temp = a;
+        a=b;
+        b=temp;
+        document.getElementById("num1"). value=a;
+        document.getElementById("num2"). value=b;
+        }
+        function sum(){
+            const a= parseInt(document.getElementById("num1").value);
+            const b= parseInt(document.getElementById("num2").value);
+            sum = a+b;
+            alert("This is sum"+sum);
+        }
+        if(a+b){
+            sum =a+b;
+            
+        }
+        console.log(sum);
+    </script>
+</body>
+</html>
