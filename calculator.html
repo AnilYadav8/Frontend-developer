@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calulator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>CALCULATOR</h2>
+            <input type="number"  id="num1" placeholder="Enter number A"><br><br>
+            <input type="number" id="num2" placeholder="Enter number B"><br><br>
+            <p id="text">0</p>
+            <button onclick="equal()">=</button>
+            <button onclick="sum()" >+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="pro()">*</button>
+            <button onclick="div()">/</button>
+            
+            <script>
+                // let equal =0;
+                function sum(){
+                    // (document.getElementById('text').innerHTML);
+                    const a = parseInt(document.getElementById("num1").value);
+                    const b = parseInt(document.getElementById("num2").value);
+
+                   const sum =a+b;
+                    alert("This is sum"+sum);
+                }
+
+                function sub(){
+                    const a = parseInt(document.getElementById("num1").value);
+                    const b = parseInt(document.getElementById("num2").value);
+
+                   const sub =a-b;
+                    alert("This is sub"+sub);
+                }
+
+                function pro(){
+                    const a = parseInt(document.getElementById("num1").value);
+                    const b = parseInt(document.getElementById("num2").value);
+
+                   const pro =a*b;
+                    alert("This is pro"+pro);
+                }
+
+                function div(){
+
+                    const a = parseInt(document.getElementById("num1").value);
+                    const b = parseInt(document.getElementById("num2").value);
+
+                   const div =a/b;
+                    alert("This is div"+div);
+                }
+               
+                function equal(){
+                    
+                    (document.getElementById('text').innerHTML = 0);
+                    equal =0;
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
