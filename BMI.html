@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>BMI Calculate</h2>
+               Age : <input type="text"><br><br>
+            Gender : <input class="male"type="radio" name="Gender">MALE
+                     <input  class="female"type="radio" name="Gender">FEMALE<br><br>
+Height (in metres) : <input  id="height" type="number"><br><br>
+Weight ( in kg) : <input id="weight" type="number"><br><br>
+                     <button  onclick="bmi()">calculate</button>
+        </div>
+    </div>
+    <script>
+        function bmi(){
+            const height=parseInt(document.getElementById("height").value);
+            const weight=parseInt(document.getElementById("weight").value);
+        
+        const valueofbmi= (weight/(height*height));
+        if(valueofbmi<16){
+            alert('Servere thinness')
+        }
+        else if(valueofbmi > 16 && valueofbmi <17){
+    alert('Moderate Thiness')
+
+
+        }
+        else if(valueofbmi > 17 && valueofbmi <18.5){
+    alert('Mild Thiness')
+    
+
+        }
+        else if(valueofbmi > 18.5 && valueofbmi <=25){
+    alert('normal')
+    
+
+        }
+        else{
+            alert('Obese')
+        }
+        }
+    </script>
+</body>
+</html>
