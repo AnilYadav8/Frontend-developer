@@ -1,0 +1,41 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+.container{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    height: 100%;
+}
+.box{
+    color: #333;
+    background-color:bisque;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 50px;
+    /* height: 100%; */
+    border-radius: 20px;
+
+}
+input{
+    color: #333;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: pink;
+}
+button{
+    background-color: skyblue;
+    padding: 10px 70px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: aliceblue;
+}
+.male{
+    background-color: grey;
+}
