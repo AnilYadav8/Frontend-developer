@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="primecheck.css">
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+    <h2>Primr Check</h2>
+    <input id="num1" type="text " placeholder="Enter the number"><br><br>
+    <button onclick="prime()">check</button>
+    <button onclick="res()">reset</button>
+    <p id="result"></p>
+</div>
+</div>
+    <script>
+        function prime(){
+            if(alert()){
+            
+        }
+            
+            let n= parseInt(document.getElementById("num1").value);
+            let check =true;
+            
+
+
+        for(let i=2; i<n; i++){
+            
+            if(n%i==0){
+                check=false;
+                break;
+            }
+        }
+         
+        if(check ==true && n !=1){
+            document.getElementById("result").innerHTML="The Number is prime";
+            // alert("This number is prime");
+        }
+        else{
+            document.getElementById("result").innerHTML="The Number is not prime";
+            // alert("This Number is not prime");
+        }
+    }
+   
+
+    
+    </script>
+</body>
+</html>
