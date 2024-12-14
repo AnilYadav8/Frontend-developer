@@ -13,7 +13,7 @@ html,body{
 }
 .box{
     color: white;
-    background-color:#1a1a1a ;
+    background-color: wheat ;
     justify-content: center;
     text-align: center;
     padding: 20px 50px;
@@ -21,7 +21,7 @@ html,body{
 }
 input{
     padding: 20px 50px;
-    background-color:#333;
+    background-color:black;
     /* color:#333; */
     padding: 10px 50px;
     text-align: left;
