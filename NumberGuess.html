@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <link rel="stylesheet" href="GuessNumber.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Guess Number !!!!!</h1>
+            <input id="num1" type="text" placeholder=" Enter your Guess Number"><br><br>
+            <button onclick="Guessnum()">click me</button>
+
+        </div>
+    
+    <p id="won"></p>
+    </div>
+    <script>
+        let rand = Math.floor(Math.random()*10);
+        function Guessnum(){
+            let input = parseInt(document.getElementById('num1').value);
+          
+
+            if(input==rand){
+                alert("You Won");
+
+            }
+            else if(input<rand){
+                alert("Guess a heigher number");
+
+            }
+            else{
+                alert("Guess is a lower number");
+            }
+        }
+    </script>
+</body>
+</html>
