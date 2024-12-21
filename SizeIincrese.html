@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: aqua;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+
+        }
+        .box{
+            
+            background-color: #333;
+            color: white;
+            font-size: 50px;
+            /* justify-content: center; */
+             border: 5px solid black;
+            text-align: center;
+            padding: 20px 50px;
+            border-radius: 20px;
+            
+        }
+        button{
+            background-color: pink;
+            border:2px black solid ;
+            border-radius: 20px;
+            padding: 20px 50px;
+        }
+        p{
+            /* background-color: ; */
+        }
+        .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class=" text">
+        <p id="count"> Good Morning</p>
+    </div>
+<div class="container">
+<div class="box">
+    
+    <button onclick="inc()">increse</button>
+    <button onclick="dec()">decrese</button>
+    <button onclick="res()">reset</button>
+    <p id="counter">0</p>
+    </div>
+</div>
+<script>
+    let counter =0;
+    let a=16;
+    let b=2;
+    function inc(){
+        if(counter<0){
+            return;
+        }
+        document.getElementById('counter').innerHTML=++counter;
+        document.getElementById('count').style.fontSize = (a+counter * b) + "px";
+    }
+    function dec(){
+        if(counter <= 0){
+            return;
+        }
+        document.getElementById('counter').innerHTML=--counter;
+        document.getElementById('count').style.fontSize = (a+counter * b) + "px";
+    }
+    
+</script>
+</body>
+</html>
