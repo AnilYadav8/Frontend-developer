@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+        height: 100%;
+
+        }
+        .container{
+            display: flex;
+            background-color: white;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            background-color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 30px;
+            border-radius: 20px;
+            border: 3px solid black;
+
+        }
+        input{
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px 5px;
+            height: 20px;
+            width: 400px;
+        }
+        /* p{
+        height: 100px;
+        width: 100px;
+            color: green;
+            font-size: 50px;
+        } */
+        button{
+            background-color: pink;
+            border-radius: 100%;
+            padding: 10px 5px;
+        }
+        #red{
+        
+    
+            background-color:green;
+            font-size: 30px;
+            padding: 5px 2500px;
+            /* text-align: center; */
+            /* display: flex; */
+        }
+        #text{
+            /* display: flex; */
+            height: 100px;
+            width: 100px;
+            font-size: 80px;
+            color: green;
+            align-items: center;
+        justify-content: center;
+        text-align: center;
+            
+        }
+        .anil{
+            height: 100px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text " placeholder="search">
+    
+    <img src="mic pic.jpg" height="100px" width="100px">
+    <!-- <p5 id="red">Google search</p5> -->
+    <div class="container">
+        <div class="box">
+            <p id="text">GOOGLE</p>
+            <input type="text" placeholder="search"  src="mic pic.jpg"><br> <br>
+            <button onclick=but1()> Anil</button>
+            <button id="but2"> ashi</button>
+    
+            <button id="but3"> papu</button>
+            <button id="but4"> Ajit</button>
+            <script>
+                function but1(){
+                  document.getElementById('text').value;
+                  alert("please search");
+                }
+                
+            </script>
+        </div>
+    </div>
+</body>
+</html>
