@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+
+    }
+    .container{
+   background-color: darkorchid;
+   height: 800px;
+ border: 5px solid black;
+
+
+
+}
+.container:hover .class{
+    margin-left: 1588px;
+    
+
+}
+.class{
+    height: 100px;
+    width: 100px;
+    transition: 2s;
+
+}
+    
+    #one{
+        background-color:aqua;
+        padding: 10px 20px;
+        height: 80px;
+        width: 80px;
+        transition-timing-function: linear;
+    }
+    #two{
+        background-color:yellow;
+        padding: 10px 20px;
+        height: 80px;
+        width: 80px;
+        transition-timing-function: ease;
+        
+    }
+    #three{
+        background-color:pink;
+        padding: 10px 20px;
+        height: 80px;
+        width: 80px;
+        transition-timing-function: ease-in;
+    }
+    #four{
+    background-color:skyblue;
+    padding: 10px 20px;
+    height: 80px;
+        width: 80px;
+        transition-timing-function: ease-in-out;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="class" id="one">one</div>
+   <div class="class" id="two">two</div>
+   <div class="class" id="three">three</div>
+   <div class="class" id="four">four</div> 
+   </div>
+</body>
+</html>
