@@ -20,8 +20,8 @@ Weight ( in kg) : <input id="weight" type="number"><br><br>
     </div>
     <script>
         function bmi(){
-            const height=parseInt(document.getElementById("height").value);
-            const weight=parseInt(document.getElementById("weight").value);
+            const height=parseFloat(document.getElementById("height").value);
+            const weight=parseFloat(document.getElementById("weight").value);
         
         const valueofbmi= (weight/(height*height));
         if(valueofbmi<16){
@@ -37,13 +37,16 @@ Weight ( in kg) : <input id="weight" type="number"><br><br>
     
 
         }
-        else if(valueofbmi > 18.5 && valueofbmi <=25){
+        else if(valueofbmi >= 18.5 && valueofbmi <=25){
     alert('normal')
     
 
         }
+        else if (bmi>26){
+            alert('OverWight');
+        }
         else{
-            alert('Obese')
+            alert("obesity");
         }
         }
     </script>
